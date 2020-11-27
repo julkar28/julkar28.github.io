@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="id">
+    <head>
+        <title>Praktikum Javascript</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="src/css/sty.css">
+    </head>
+    <body class="home">
+        <nav>
+            <div class="logo">
+                <label class="logo">Julkar28</label>
+            </div>
+            <ul>
+                <li>
+                    <a href="index.html" class="active">HOME</a>
+                </li>
+                <li>
+                    <a href="login.html">LOGIN</a>
+                </li>
+                <li>
+                    <a href="kurs.html">KURS</a>
+                </li>
+                <li>
+                    <a href="image.html">IMAGE</a>
+                </li>
+            </ul>
+            <div class="toggle">
+                <input type="checkbox">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+        <div class="container">
+            <h1>Praktikum Javascript</h1>
+            <div class="palet">
+                <h2>Julkarnain</h2>
+                <h2>0110220250</h2>
+                <h2>TI05</h2>
+            </div>
+        </div>
+        <div class="hide1">
+            <button class="close" onclick="showchat(false)">X</button>
+            <div id="chatlog">
+                <div class="chat1">
+                    <p class="msg1">Hai selamat datang di web ini, siapa nama anda?</p>
+                </div>
+            </div>
+            <div class="chatform">
+                <textarea class="ddd"></textarea>
+                <button onclick="chatSend()">Kirim</button>
+            </div>
+        </div>
+        <div class="btnchat">
+            <button onclick="showchat(true)">
+                <img src="src/img/chat.png" alt="">
+            </button>
+        </div>
+        <script src="src/js/scripts.js"></script>
+    </body>
+</html>

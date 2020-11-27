@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="id">
+    <head>
+        <title>Praktikum 4</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="src/css/sty.css">
+    </head>
+    <body class="kursPage">
+        <nav>
+            <div class="logo">
+                <label class="logo">Julkar28</label>
+            </div>
+            <ul>
+                <li>
+                    <a href="index.html">HOME</a>
+                </li>
+                <li>
+                    <a href="login.html">LOGIN</a>
+                </li>
+                <li>
+                    <a href="kurs.html" class="active">KURS</a>
+                </li>
+                <li>
+                    <a href="image.html">IMAGE</a>
+                </li>
+            </ul>
+            <div class="toggle">
+                <input type="checkbox">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+        <div class="container">
+            <h1>Kurs mata uang</h1>
+            <div class="inp">
+                <div class="flags1">
+                    <img id="flag" src="src/img/2.png">
+                </div>
+                <p id="sym1">US$</p>
+                <div class="cnt">
+                    <div class="textbox">
+                        <input id="value" type="number" name="valc" placeholder="0" onchange="kurs()">
+                    </div>
+                    <select id="country" onchange="kurs()">
+                        <option value="9915">US Dollar</option>
+                        <option value="13472">Dollar Singapore</option>
+                        <option value="874">Ringgit Malaysia</option>
+                        <option value="120">Yen Jepang</option>
+                        <option value="15888">Euro</option>
+                        <option value="3592">Riyal Arab Saudi</option>
+                    </select>
+                </div>
+            </div>
+            <div class="out">
+                <div class="flags2">
+                    <img src="src/img/1.png">
+                </div>
+                <p id="sym2">Rp</p>
+                <div class="cnt">
+                    <div class="textbox">
+                        <input
+                            id="range"
+                            type="number"
+                            name="range"
+                            value="0"
+                            onchange="kurs()"
+                            disabled="disabled">
+                    </div>
+                    <select name="rp" id="country1" disabled="disabled">
+                        <option value="ind">Indonesia Rupiah</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <div class="hide1">
+            <button class="close" onclick="showchat(false)">X</button>
+            <div id="chatlog">
+                <div class="chat1">
+                    <p class="msg1">Hai selamat datang di web ini, siapa nama anda?</p>
+                </div>
+            </div>
+            <div class="chatform">
+                <textarea class="ddd"></textarea>
+                <button onclick="chatSend()">Kirim</button>
+            </div>
+        </div>
+        <div class="btnchat">
+            <button onclick="showchat(true)">
+                <img src="src/img/chat.png" alt="">
+            </button>
+        </div>
+        <script src="src/js/scripts.js"></script>
+    </body>
+</html>

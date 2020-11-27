@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="id">
+    <head>
+        <title>Praktikum 4</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="src/css/sty.css">
+    </head>
+    <body class="lgn">
+        <nav>
+            <div class="logo">
+                <label class="logo">Julkar28</label>
+            </div>
+            <ul>
+                <li>
+                    <a href="index.html">HOME</a>
+                </li>
+                <li>
+                    <a href="login.html" class="active">LOGIN</a>
+                </li>
+                <li>
+                    <a href="kurs.html">KURS</a>
+                </li>
+                <li>
+                    <a href="image.html">IMAGE</a>
+                </li>
+            </ul>
+            <div class="toggle">
+                <input type="checkbox">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+        <form class="container">
+            <h1>Login</h1>
+            <div class="textbox">
+                <input
+                    id="user"
+                    type="text"
+                    autocomplete="off"
+                    name="uid"
+                    placeholder="Username"
+                    required="">
+            </div>
+            <div class="textbox">
+                <input
+                    id="pass"
+                    type="password"
+                    autocomplete="off"
+                    name="pwd"
+                    placeholder="Password"
+                    required="">
+            </div>
+            <div class="textbox">
+                <input
+                    type="submit"
+                    name="submit"
+                    class="btn"
+                    value="Sign In"
+                    onclick="formLogin()">
+            </div>
+
+        </form>
+        <div class="hide1">
+            <button class="close" onclick="showchat(false)">X</button>
+            <div id="chatlog">
+                <div class="chat1">
+                    <p class="msg1">Hai selamat datang di web ini, siapa nama anda?</p>
+                </div>
+            </div>
+            <div class="chatform">
+                <textarea class="ddd"></textarea>
+                <button onclick="chatSend()">Kirim</button>
+            </div>
+        </div>
+        <div class="btnchat">
+            <button onclick="showchat(true)">
+                <img src="src/img/chat.png" alt="">
+            </button>
+        </div>
+        <script src="src/js/otentikasi.js"></script>
+    </body>
+</html>
