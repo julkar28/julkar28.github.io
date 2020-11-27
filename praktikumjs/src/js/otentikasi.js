@@ -8,7 +8,7 @@ function chatSend() {
 	ss.appendChild(para);
 	document.getElementById('chatlog').appendChild(ss);
 
-	let nama = 'Hai' + document.getElementsByClassName('ddd')[0].value + 'salam kenal';
+	let nama = 'Hai ' + document.getElementsByClassName('ddd')[0].value + ' salam kenal';
 	let balas = document.createTextNode(nama);
 	let par = document.createElement('h4');
 	par.className = 'msg1';
