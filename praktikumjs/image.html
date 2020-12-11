@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="id">
+    <head>
+        <title>Praktikum Javascript</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="src/css/style.css">
+    </head>
+    <body class="imagePage">
+        <nav>
+            <div class="logo">
+                <label class="logo">Julkar28</label>
+            </div>
+            <ul>
+                <li>
+                    <a href="index.html">HOME</a>
+                </li>
+                <li>
+                    <a href="login.html">LOGIN</a>
+                </li>
+                <li>
+                    <a href="kurs.html">KURS</a>
+                </li>
+                <li>
+                    <a href="image.html" class="active">IMAGE</a>
+                </li>
+            </ul>
+            <div class="toggle">
+                <input type="checkbox">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+        <div class="container">
+            <h1>Image Picker</h1>
+            <div class="cnt1">
+                <select id="listImg" onchange="gambar()">
+                    <option value="./src/img/cat.jpg">Kucing</option>
+                    <option value="./src/img/elephant.jpg">Gajah</option>
+                    <option value="./src/img/giraffe.jpg">Jerapah</option>
+                    <option value="./src/img/cow.jpg">Sapi</option>
+                    <option value="./src/img/turtle.jpg">Kura-kura</option>
+                    <option value="./src/img/kangaroo.jpg">Kangguru</option>
+                </select>
+                <div class="images">
+                    <img src="./src/img/cat.jpg" id="fullImg">
+                </div>
+            </div>
+        </div>
+        <div class="hide1">
+            <button class="close" onclick="showchat(false)">X</button>
+            <div id="chatlog">
+                <div class="chat1">
+                    <p class="msg1">Hai selamat datang di web ini, siapa nama anda?</p>
+                </div>
+            </div>
+            <div class="chatform">
+                <textarea class="ddd"></textarea>
+                <button onclick="chatSend()">Kirim</button>
+            </div>
+        </div>
+        <div class="btnchat">
+            <button onclick="showchat(true)">
+                <img src="src/img/chat.png" alt="">
+            </button>
+        </div>
+        <script src="src/js/scripts.js"></script>
+    </body>
+</html>
